@@ -9,65 +9,65 @@ if(isauth !== "Authenticated"){
 
 
 
-var products = document.getElementById("products");  
+// var products = document.getElementById("products");  
 
-var main = JSON.parse(localStorage.getItem("cartDetails"));
-// var main2 = JSON.parse(localStorage.getItem("cartDeals"));
+// var main = JSON.parse(localStorage.getItem("cartDetails"));
+// // var main2 = JSON.parse(localStorage.getItem("cartDeals"));
 
 
-prodata(main);
+// prodata(main);
 
-function prodata(collection) {
-    collection.forEach(function (ele,i) {
-        var box = document.createElement("div")
-        box.setAttribute("class","box")
-        var price1 = document.createElement("h4")
-        price1.innerText = ele.price;
-        price1.setAttribute("class","price")
-        var price2 = document.createElement("span")
-        price2.innerText = ele.actualpriceprice;
+// function prodata(collection) {
+//     collection.forEach(function (ele,i) {
+//         var box = document.createElement("div")
+//         box.setAttribute("class","box")
+//         var price1 = document.createElement("h4")
+//         price1.innerText = ele.price;
+//         price1.setAttribute("class","price")
+//         var price2 = document.createElement("span")
+//         price2.innerText = ele.actualpriceprice;
         
 
-        var img = document.createElement("img")
-        img.src = ele.img_src;
-        img.setAttribute("class","img")
+//         var img = document.createElement("img")
+//         img.src = ele.img_src;
+//         img.setAttribute("class","img")
 
-        var Brand = document.createElement("h3")
-        Brand.innerText = ele.Brand
-        Brand.setAttribute("class","brand")
+//         var Brand = document.createElement("h3")
+//         Brand.innerText = ele.Brand
+//         Brand.setAttribute("class","brand")
 
-        var Rating = document.createElement("h5")
-        Rating.innerText = `${ele.Rating} star`
-        Rating.setAttribute("class","Rating")
+//         var Rating = document.createElement("h5")
+//         Rating.innerText = `${ele.Rating} star`
+//         Rating.setAttribute("class","Rating")
 
-        var btn  = document.createElement("button")
-        btn.innerText = "Remove From Card"
-        btn.setAttribute("class","btn")
+//         var btn  = document.createElement("button")
+//         btn.innerText = "Remove From Card"
+//         btn.setAttribute("class","btn")
 
-        btn.onclick = function(){
-            addToCart(ele,i)
-        }
+//         btn.onclick = function(){
+//             addToCart(ele,i)
+//         }
        
 
 
-        box.append(img,Brand,price1,Rating,btn);
-        fashion.append(box)
+//         box.append(img,Brand,price1,Rating,btn);
+//         fashion.append(box)
 
 
     
-    });
-}
+//     });
+// }
 
-function addToCart(ele,i) 
-{
-    main.splice(i,1)
-    console.log(main)
-    alert("Product removed successfully. After refreshing, it will be removed automatically!");
-    localStorage.setItem("cartDetails", JSON.stringify(main));
+// function addToCart(ele,i) 
+// {
+//     main.splice(i,1)
+//     console.log(main)
+//     alert("Product removed successfully. After refreshing, it will be removed automatically!");
+//     localStorage.setItem("cartDetails", JSON.stringify(main));
 
 
 
-}
+// }
 
 
 
