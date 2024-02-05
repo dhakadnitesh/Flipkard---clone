@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkard products</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./grocery.css">
+
+
+    <!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+    <style>
+        button:hover{
+            cursor: pointer;
+        }
+
+
+
+
+    </style>
+    <!--  -->
+</head>
+
+<body>
+
+
+
+
+    <div id="container"> </div>
+    <!--navbar  -->
+
+    <section id="product">
+<div id="product1">
+    <!-- <features> -->
+   <button onclick="sortHightoLow()" style="margin: 40px;font-weight: 600;background-color: teal;;border-radius: 10px;">Rating: High to Low</button>
+<br>
+<br>
+
+<button onclick="sortLowtoHigh()" style="margin: 40px;font-weight: 600;background-color: pink;;border-radius: 10px;">Rating: Low to High</button>
+
+
+</div>
+
+        <div id="product2">
+            <!-- <div style="display: flex;" id="menu">
+               
+            </div> -->
+
+            <div id="collection"></div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+<!-- <script src="./index.js"></script> -->
+
+<script>
+    $(function () {
+        $("#container").load("./Navbar.html")
+    });
+</script>
+<script src="./grocery.js"></script>

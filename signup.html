@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./signup.css">
+    <!--  -->
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!--  -->
+
+
+</head>
+
+<body>
+    <div id="container"></div>
+    <!--  -->
+    <div id="signup">
+        <div id="signup1" >
+            <p id="p1">Look like you're new here!</p>
+            <br>
+            <p id="p2">Please fillout the following  Details..</p>
+            <div id="p3">
+
+            </div>
+        </div>
+        <!-- form start -->
+        <div id="signup2">
+            <form action="" id="form">
+                <input id="email" type="email" placeholder="Enter Email" required>
+                <!-- <hr> -->
+                <br>
+                <br>
+                <input id="password" type="password" placeholder="Enter password" required>
+
+
+                <p style="font-size: 8px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 600;margin-left: 5px;">By continuing,
+                    you agree to Flipkart's <a class="a1" href="https://www.flipkart.com/pages/terms">Terms of use</a>
+                    and <a class="a1" href="https://www.flipkart.com/pages/privacypolicy">Privacy policy</a></p>
+                <input type="submit" id="int2">
+            </form>
+            <!--form end  -->
+            <button id="button"  onclick="window.location.href='index.html'">Existing user?  Login </button>
+
+        </div>
+        <!--  -->
+    </div>
+
+</body>
+
+</html>
+<script>
+    $(function () {
+        $("#container").load("./Navbar.html")
+    });
+</script>
+
+<script src="./signup.js"></script>

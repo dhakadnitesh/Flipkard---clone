@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkard</title>
+    <link rel="stylesheet" href="./index.css">
+    <!--  -->
+    
+    <!--  -->
+    <!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!--  -->
+   
+<!--  -->
+<style>
+    #slider {
+        max-height: 250px; 
+        overflow: hidden;
+        margin: auto; 
+        position: relative;
+    }
+
+    #slider img {
+        width: 98%;
+        height: auto;
+        display: block;
+        margin: 0 auto; 
+    }
+
+    .slider-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .slider-nav button {
+        background: white;
+        border: none;
+        font-size:30px;
+        cursor: pointer;
+        color:
+#2874f0;
+    }
+    #nav1{
+        margin-right: 20px;
+    }
+</style>
+<!--  -->
+</head>
+
+<body>
+
+
+
+
+    <div id="container"> </div>
+    <!--navbar  -->
+
+    <section id="category">
+
+    </section>
+    <!--  -->
+    <div id="slider">
+        <div class="slider-nav">
+            <button  onclick="prevSlide()">❮</button>
+            <button  id="nav1" onclick="nextSlide()">❯</button>
+        </div>
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/d29152d1d112fbf0.jpg?q=20" alt="Image 1">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/739ed527dbf977fe.jpg?q=20" alt="Image 2">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/11d1a426d766442c.jpg?q=20" alt="Image 3">
+    </div>
+
+    <div id="photo">
+        <div class="photo1">
+
+        </div>
+
+        <div class="watch">
+            <div class="watch1" style="background-image: url(https://rukminim2.flixcart.com/image/612/612/k7f34i80/t-shirt/r/y/r/m-10940528-roadster-original-imafpnru9dnr3phh.jpeg?q=70);background-size: cover;"></div>
+            <div class="watch1" style="background-image: url(https://rukminim2.flixcart.com/image/612/612/xif0q/watch/y/r/z/-original-imagphkzsajh8rjf.jpeg?q=70);background-size: cover;"></div>
+            <div class="watch1" style="background-image: url(https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/r/m/n/-original-imaggcb6huf9rggk.jpeg?q=70);background-size: cover;"></div>
+            <div class="watch1" style="background-image: url(https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/c/t/l/5-rll010-red-tape-beige-purple-original-imagszyhs869mj7u.jpeg?q=70);background-size: cover;"></div>
+            <div class="watch1" style="background-image: url(https://rukminim2.flixcart.com/image/612/612/xif0q/jacket/k/u/f/-original-imagvq9psrgzzkz7.jpeg?q=70);background-size: cover;"></div>
+
+        </div>
+        
+
+    <div id="items">
+        <div class="items1" style="background-image: url(https://rukminim1.flixcart.com/fk-p-flap/520/280/image/027596eb7f22a6f6.jpg?q=20);background-size: cover;"></div>
+        <div class="items1" style="background-image: url(https://rukminim1.flixcart.com/fk-p-flap/520/280/image/015f494868ce74b7.png?q=20);background-size: cover;"></div>
+        <div class="items1" style="background-image: url(https://rukminim1.flixcart.com/fk-p-flap/520/280/image/3cae8141058a83bb.jpg?q=20);background-size: cover;"></div>
+        <div class="items1" style="background-image: url(https://rukminim1.flixcart.com/fk-p-flap/520/280/image/086735f088f0eab4.jpg?q=20);background-size: cover;"></div>
+        <div class="items1" style="background-image: url(https://rukminim1.flixcart.com/fk-p-flap/520/280/image/11d580aaf91728e0.jpg?q=20);background-size: cover;"></div>
+        <div class="items1" style="background-image: url(https://rukminim1.flixcart.com/fk-p-flap/520/280/image/c45c807df9d7d859.jpg?q=20);background-size: cover;"></div>
+        <div class="items1" style="background-image: url(https://rukminim1.flixcart.com/fk-p-flap/520/280/image/ea6fb437742bfba8.jpg?q=20);background-size: cover;"></div>
+        <div class="items1" style="background-image: url(https://rukminim1.flixcart.com/fk-p-flap/520/280/image/24b3a35f26a0bb4b.jpg?q=20);background-size: cover;"></div>
+        <div class="items1" style="background-image: url(https://rukminim1.flixcart.com/fk-p-flap/520/280/image/09ada0f48b8e2bb7.jpg?q=20);background-size: cover;"></div>
+
+        
+       
+    </div>
+    <div id="tuple">
+        <div class="tuple1" style="background-image: url(https://rukminim2.flixcart.com/image/612/612/kxgfzbk0/kurta/0/n/2/4xl-21aua12386-503327-aurelia-original-imag9wntbhyqmzmk.jpeg?q=70);background-size: cover;"></div>
+        <div class="tuple1" style="background-image: url(https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/d/3/2/-original-imagx7zjnx3vznp3.jpeg?q=70);background-size: cover;"></div>
+        <div class="tuple1" style="background-image: url(https://rukminim2.flixcart.com/image/612/612/xif0q/sunglass/m/q/v/l-chi0085-c2-royal-son-original-imagsretpuajkac5.jpeg?q=70);background-size: cover;"></div>
+        <div class="tuple1" style="background-image: url(https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/n/j/x/9-rso337-red-tape-white-original-imagu29yhgcqyzz9.jpeg?q=70);background-size: cover;"></div>
+        <div class="tuple1" style="background-image: url(https://rukminim2.flixcart.com/image/612/612/xif0q/hand-messenger-bag/5/k/d/-original-imagtehfdgxkvmpc.jpeg?q=70);background-size: cover;"></div>
+
+    </div>
+
+    <div id="p">
+        <h4 id="h1">
+            Flipkard : The One-Stop Shopping Destination 
+        </h4>
+        <p id="p11">
+            "Flipkard: The One-Stop Shopping Destination" means that Flipkard wants to be the only place you need for shopping. It's like a big online store where you can find everything you want to buy, from clothes to electronics. The idea is to save you time by having everything in one spot. Flipkard makes it easy to use their website or app, so you can quickly find what you're looking for. They promise to be a reliable place where you can trust the products and payment process. In simple terms, Flipkard wants to be your go-to place for all your shopping needs, making it easy and convenient for you.
+
+
+
+
+
+
+        </p>
+
+        <h4 id="h2">Flipkard Plus</h4>
+        <p id="p22">"Imagine Flipkart Plus as a special club for online shopping. Once you join, you get faster and free delivery for certain items. And guess what? Every time you shop, you earn points that can be turned into discounts later. It's like a secret way to save money! Plus, you get to know about sales and deals before others – it's like being a shopping VIP. So, if you like getting goodies and saving cash, Flipkart Plus is the way to go!</p>
+    
+        <h4 id="h3">No Cost Emi</h4>
+    <p id="p33">"No Cost EMI is like a magic trick for buying things without breaking the bank. Imagine you want to get a cool new gadget, but paying all the money at once feels like a heavy weight on your wallet. Well, No Cost EMI swoops in like a superhero to save the day. It stands for 'Equated Monthly Installment,' but don't let the big words scare you.</p>
+    
+    </div>
+
+    <!-- footer -->
+
+    <section id="footer">
+        <div>
+          <li class="heading">About</li>
+          <li>About Us</li>
+          <li>Career</li>
+          <li>Flipkart Stories</li>
+          <li>Cleartrip</li>
+        </div>
+        <div>
+          <li class="heading">Help</li>
+          <li>About Us</li>
+          <li>Career</li>
+          <li>Flipkart Stories</li>
+          <li>Cleartrip</li>
+        </div>
+        <div>
+          <li class="heading">CONUSMER POLICY</li>
+          <li>About Us</li>
+          <li>Career</li>
+          <li>Flipkart Stories</li>
+          <li>Cleartrip</li>
+        </div>
+        <div>
+          <li class="heading">Social</li>
+          <li>Instagram</li>
+          <li>LinkedIn</li>
+          <li>Facebook</li>
+          <li>X</li>
+        </div>
+        <div>
+          <li class="heading">Address</li>
+          <li>About Us</li>
+          <li>Career</li>
+          <li>Flipkart Stories</li>
+          <li>Cleartrip</li>
+        </div>
+        <div>
+          <li class="heading">Contact us</li>
+          <li>About Us</li>
+          <li>Career</li>
+          <li>Flipkart Stories</li>
+          <li>Cleartrip</li>
+        </div>
+      </section>
+
+    
+
+
+
+   
+    </body>
+    </html>
+
+    <script src="./index.js"></script>
+
+    <script>
+        $(function () {
+            $("#container").load("./Navbar.html")
+        });
+        
+        
+       
+
+// slider start
+        var currentIndex = 0;
+        var items = $('#slider img');
+        var itemAmt = items.length;
+
+        function cycleItems() {
+            items.hide();
+            items.eq(currentIndex).show();
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % itemAmt;
+            cycleItems();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + itemAmt) % itemAmt;
+            cycleItems();
+        }
+
+        var autoSlide = setInterval(function () {
+            nextSlide();
+        }, 2000); 
+
+        
+        $('#slider').hover(
+            function () {
+                clearInterval(autoSlide);
+            },
+            function () {
+                autoSlide = setInterval(function () {
+                    nextSlide();
+                }, 2000); 
+            }
+        );
+        
+    </script>
+    <!--  -->
+
+
+    
